@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="*" org.eventb.core.assignment="BusAtStation ≔ TRUE" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="UsagersBus :∣ UsagersBus' ⊆ Usagers ∧ finite(UsagersBus') ∧ card(UsagersBus') ≤ BusCapacity " org.eventb.core.label="act5"/>
+<org.eventb.core.action name="." org.eventb.core.assignment="UsagersVeulentDescendre ≔ ∅" org.eventb.core.label="act8"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="UsagersStation ≔ ∅" org.eventb.core.label="act6"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="BusContext"/>
+<org.eventb.core.variable name=")" org.eventb.core.identifier="UsagersBus"/>
+<org.eventb.core.invariant name="*" org.eventb.core.label="inv1" org.eventb.core.predicate="UsagersBus ⊆ Usagers"/>
+<org.eventb.core.variable name="+" org.eventb.core.identifier="UsagersStation"/>
+<org.eventb.core.invariant name="@" org.eventb.core.label="inv11" org.eventb.core.predicate="finite(UsagersBus)"/>
+<org.eventb.core.invariant name="?" org.eventb.core.label="inv10" org.eventb.core.predicate="card(UsagersBus) ≤ BusCapacity"/>
+<org.eventb.core.invariant name="," org.eventb.core.label="inv2" org.eventb.core.predicate="UsagersStation ⊆ Usagers"/>
+<org.eventb.core.variable name="." org.eventb.core.identifier="BusAtStation"/>
+<org.eventb.core.invariant name="A" org.eventb.core.label="inv12" org.eventb.core.predicate="finite(UsagersStation)"/>
+<org.eventb.core.invariant name="&gt;" org.eventb.core.label="inv9" org.eventb.core.predicate="UsagersBus ∩ UsagersStation = ∅"/>
+<org.eventb.core.invariant name="9" org.eventb.core.label="inv7" org.eventb.core.predicate="UsagersVeulentDescendre ⊆ UsagersBus"/>
+<org.eventb.core.invariant name="B" org.eventb.core.label="inv13" org.eventb.core.predicate="finite(UsagersVeulentDescendre)"/>
+<org.eventb.core.invariant name="0" org.eventb.core.label="inv4" org.eventb.core.predicate="BusAtStation ∈ BOOL"/>
+<org.eventb.core.event name="1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="BusArriveToStation">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="BusAtStation = FALSE"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="BusAtStation ≔ TRUE" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="UsagersStation :∣ UsagersStation' ⊆ Usagers ∧ UsagersStation' ∩ UsagersBus = ∅ ∧ finite(UsagersStation')" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="UsagersVeulentDescendre :∣ UsagersVeulentDescendre' ⊆ UsagersBus ∧ finite(UsagersVeulentDescendre)" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="2" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="PassengerGetOffBus">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate=" BusAtStation = TRUE"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="UsagersBus ≔ UsagersBus ∖ UsagersVeulentDescendre" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="UsagersVeulentDescendre ≔ ∅" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="3" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="PassengerGetOnBus">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="BusAtStation = TRUE"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="UsagersBus ≔ UsagersBus ∪ UsagersStation" org.eventb.core.label="act1"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="UsagersStation ≔ ∅" org.eventb.core.label="act2"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="card(UsagersBus ∪ UsagersStation) ≤ BusCapacity"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="6" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="BusLeave">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="BusAtStation = TRUE"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="BusAtStation ≔ FALSE" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.invariant name="7" org.eventb.core.comment="Le bus ne peut pas etre dans l'arret et pas dans l'arret en meme temps" org.eventb.core.label="inv6" org.eventb.core.predicate="¬(BusAtStation = TRUE ∧ BusAtStation = FALSE)"/>
+<org.eventb.core.variable name=":" org.eventb.core.identifier="UsagersVeulentDescendre"/>
+</org.eventb.core.machineFile>
