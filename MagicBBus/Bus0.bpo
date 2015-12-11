@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="79">
+<org.eventb.core.poFile org.eventb.core.poStamp="80">
 <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="76">
 <org.eventb.core.poIdentifier name="Usagers" org.eventb.core.type="ℙ(Usagers)"/>
 <org.eventb.core.poIdentifier name="BusCapacity" org.eventb.core.type="ℤ"/>
@@ -163,7 +163,13 @@
 <org.eventb.core.poPredicateSet name="EVTALLHYPUsagersVeulentDescendrg" org.eventb.core.parentSet="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#EVTIDENTUsagersVeulentDescendrg" org.eventb.core.poStamp="76">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="BusAtStation=FALSE" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.event#1|org.eventb.core.guard#'"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="PassengerGetOffBus/inv11/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="78">
+<org.eventb.core.poSequent name="PassengerGetOffBus/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="80">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#EVTHYPUsagersVeulentDescendrh("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite({user})" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.event#2|org.eventb.core.guard#."/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.event#2|org.eventb.core.guard#."/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#EVTHYPUsagersVeulentDescendrh("/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="PassengerGetOffBus/inv11/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="80">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#EVTALLHYPUsagersVeulentDescendrh"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(UsagersBus ∖ {user})" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.invariant#@"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.event#2"/>
@@ -171,7 +177,7 @@
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poSequent#PassengerGetOffBus\/inv11\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#HYPBusContext03|org.eventb.core.poPredicate#PRD1"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="PassengerGetOffBus/inv10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="78">
+<org.eventb.core.poSequent name="PassengerGetOffBus/inv10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="80">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#EVTALLHYPUsagersVeulentDescendrh"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="card(UsagersBus ∖ {user})≤BusCapacity" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.invariant#?"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.event#2"/>
@@ -179,7 +185,7 @@
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poSequent#PassengerGetOffBus\/inv10\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="PassengerGetOffBus/inv9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="78">
+<org.eventb.core.poSequent name="PassengerGetOffBus/inv9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="80">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#EVTALLHYPUsagersVeulentDescendrh"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(UsagersBus ∖ {user})∩UsagersStation=(∅ ⦂ ℙ(Usagers))" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.invariant#&gt;"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.event#2"/>
@@ -187,7 +193,7 @@
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poSequent#PassengerGetOffBus\/inv9\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="PassengerGetOffBus/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="78">
+<org.eventb.core.poSequent name="PassengerGetOffBus/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="80">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#EVTALLHYPUsagersVeulentDescendrh"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="UsagersVeulentDescendre ∖ {user}⊆UsagersBus ∖ {user}" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.invariant#9"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.event#2"/>
@@ -195,7 +201,7 @@
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poSequent#PassengerGetOffBus\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="PassengerGetOffBus/inv13/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="78">
+<org.eventb.core.poSequent name="PassengerGetOffBus/inv13/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="80">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#EVTALLHYPUsagersVeulentDescendrh"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(UsagersVeulentDescendre ∖ {user})" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.invariant#B"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.event#2"/>
@@ -208,9 +214,12 @@
 <org.eventb.core.poIdentifier name="UsagersBus'" org.eventb.core.type="ℙ(Usagers)"/>
 <org.eventb.core.poIdentifier name="user" org.eventb.core.type="Usagers"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPUsagersVeulentDescendrh" org.eventb.core.parentSet="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#EVTIDENTUsagersVeulentDescendrh" org.eventb.core.poStamp="77">
+<org.eventb.core.poPredicateSet name="EVTHYPUsagersVeulentDescendrh(" org.eventb.core.parentSet="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#EVTIDENTUsagersVeulentDescendrh" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="BusAtStation=TRUE" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.event#2|org.eventb.core.guard#'"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="user∈UsagersVeulentDescendre" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.event#2|org.eventb.core.guard#,"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPUsagersVeulentDescendrh" org.eventb.core.parentSet="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#EVTHYPUsagersVeulentDescendrh(" org.eventb.core.poStamp="80">
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="card({user})=1" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.event#2|org.eventb.core.guard#."/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poSequent name="PassengerGetOnBus/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="78">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#EVTHYPUsagersVeulentDescendri("/>
@@ -218,7 +227,13 @@
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.event#3|org.eventb.core.guard#*"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#EVTHYPUsagersVeulentDescendri("/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="PassengerGetOnBus/inv11/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="78">
+<org.eventb.core.poSequent name="PassengerGetOnBus/grd4/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="80">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#EVTHYPUsagersVeulentDescendri)"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite({user})" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.event#3|org.eventb.core.guard#-"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.event#3|org.eventb.core.guard#-"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#EVTHYPUsagersVeulentDescendri)"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="PassengerGetOnBus/inv11/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="80">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#EVTALLHYPUsagersVeulentDescendri"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(UsagersBus∪{user})" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.invariant#@"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.event#3"/>
@@ -226,7 +241,7 @@
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poSequent#PassengerGetOnBus\/inv11\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#HYPBusContext03|org.eventb.core.poPredicate#PRD1"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="PassengerGetOnBus/inv10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="78">
+<org.eventb.core.poSequent name="PassengerGetOnBus/inv10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="80">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#EVTALLHYPUsagersVeulentDescendri"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="card(UsagersBus∪{user})≤BusCapacity" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.invariant#?"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.event#3"/>
@@ -234,7 +249,7 @@
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poSequent#PassengerGetOnBus\/inv10\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="PassengerGetOnBus/inv12/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="78">
+<org.eventb.core.poSequent name="PassengerGetOnBus/inv12/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="80">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#EVTALLHYPUsagersVeulentDescendri"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(UsagersStation ∖ {user})" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.invariant#A"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.event#3"/>
@@ -242,7 +257,7 @@
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poSequent#PassengerGetOnBus\/inv12\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="PassengerGetOnBus/inv9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="78">
+<org.eventb.core.poSequent name="PassengerGetOnBus/inv9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="80">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#EVTALLHYPUsagersVeulentDescendri"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(UsagersBus∪{user})∩(UsagersStation ∖ {user})=(∅ ⦂ ℙ(Usagers))" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.invariant#&gt;"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.event#3"/>
@@ -250,7 +265,7 @@
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poSequent#PassengerGetOnBus\/inv9\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="PassengerGetOnBus/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="78">
+<org.eventb.core.poSequent name="PassengerGetOnBus/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="80">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#EVTALLHYPUsagersVeulentDescendri"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="UsagersVeulentDescendre⊆UsagersBus∪{user}" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.invariant#9"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.event#3"/>
@@ -267,8 +282,11 @@
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="BusAtStation=TRUE" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.event#3|org.eventb.core.guard#'"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="user∈UsagersStation" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.event#3|org.eventb.core.guard#,"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPUsagersVeulentDescendri" org.eventb.core.parentSet="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#EVTHYPUsagersVeulentDescendri(" org.eventb.core.poStamp="78">
+<org.eventb.core.poPredicateSet name="EVTHYPUsagersVeulentDescendri)" org.eventb.core.parentSet="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#EVTHYPUsagersVeulentDescendri(" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="card(UsagersBus)&lt;BusCapacity" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.event#3|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPUsagersVeulentDescendri" org.eventb.core.parentSet="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#EVTHYPUsagersVeulentDescendri)" org.eventb.core.poStamp="80">
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="card({user})=1" org.eventb.core.source="/MagicBBus/Bus0.bum|org.eventb.core.machineFile#Bus0|org.eventb.core.event#3|org.eventb.core.guard#-"/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poSequent name="BusLeave/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="79">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MagicBBus/Bus0.bpo|org.eventb.core.poFile#Bus0|org.eventb.core.poPredicateSet#EVTHYPUsagersVeulentDescendrj'"/>

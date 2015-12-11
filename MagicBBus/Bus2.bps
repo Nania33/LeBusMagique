@@ -1,25 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.psFile>
-<org.eventb.core.psStatus name="inv8/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="90" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv10/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="91" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="91" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="91" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv11/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="91" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="91" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="PassengerGetOffBusByOne/inv10/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="90" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="PassengerGetOffBusByOne/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="90" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="PassengerGetOffBusByOne/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="90" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="PassengerGetOnBusByOne/grd5/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="94" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="PassengerGetOnBusByOne/inv10/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="94" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="PassengerGetOnBusByOne/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="94" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="PassengerGetOnBusByOne/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="94" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="PassengerGetOnBusByOne/inv11/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="94" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="PassengerGetOnBusByOne/grd2/GRD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="94" org.eventb.core.psManual="true"/>
-<org.eventb.core.psStatus name="Leave/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="95" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="Leave/grd2/GRD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="95" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="BusArrivesAtStation/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="99" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="BusArrivesAtStation/inv11/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="99" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="BusArrivesAtStation/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="99" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="BusArrivesAtStation/act4/SIM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="99" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="BusArrivesAtStation/act3/SIM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="99" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="PrioPassengersGetOn/grd2/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="35" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="PrioPassengersGetOn/grd3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="36" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="PrioPassengersGetOn/grd3/THM" org.eventb.core.confidence="-99" org.eventb.core.poStamp="36" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="PrioPassengersGetOn/grd1/GRD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="35" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="PrioPassengersGetOn/grd7/GRD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="35" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name=")" org.eventb.core.assignment="DescenteEnCours ≔ FALSE" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="." org.eventb.core.assignment="BusAtStation ≔ TRUE" org.eventb.core.label="act8"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="MonteeEnCours ≔ FALSE" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="UsagersVeulentDescendre ≔ ∅" org.eventb.core.label="act5"/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="UsagersStation ≔ ∅" org.eventb.core.label="act7"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="UsagersBus :∣ UsagersBus' ⊆ Usagers ∧ finite(UsagersBus') ∧ card(UsagersBus') ≤ BusCapacity " org.eventb.core.label="act6"/>
+</org.eventb.core.event>
+<org.eventb.core.invariant name="*" org.eventb.core.label="inv3" org.eventb.core.predicate="MonteeEnCours ∈ BOOL"/>
+<org.eventb.core.invariant name="+" org.eventb.core.label="inv4" org.eventb.core.predicate="DescenteEnCours ∈ BOOL"/>
+<org.eventb.core.variable name="7" org.eventb.core.identifier="UsagersStation"/>
+<org.eventb.core.variable name="4" org.eventb.core.identifier="UsagersBus"/>
+<org.eventb.core.variable name="." org.eventb.core.identifier="MonteeEnCours"/>
+<org.eventb.core.variable name="/" org.eventb.core.identifier="DescenteEnCours"/>
+<org.eventb.core.event name="0" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="PassengerGetOffBusFirstPhase">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="BusAtStation = TRUE"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="UsagersBus ≔ UsagersBus ∖ {user}" org.eventb.core.label="act1"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="user"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="user ∈ UsagersVeulentDescendre"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd4" org.eventb.core.predicate="DescenteEnCours = TRUE"/>
+<org.eventb.core.action name="/" org.eventb.core.assignment="UsagersVeulentDescendre ≔ UsagersVeulentDescendre ∖ {user}" org.eventb.core.label="act2"/>
+<org.eventb.core.refinesEvent name="0" org.eventb.core.target="PassengerGetOffBus"/>
+<org.eventb.core.guard name="1" org.eventb.core.label="grd5" org.eventb.core.predicate="card({user}) = 1"/>
+</org.eventb.core.event>
+<org.eventb.core.refinesMachine name="1" org.eventb.core.target="Bus0"/>
+<org.eventb.core.variable name="2" org.eventb.core.identifier="UsagersVeulentDescendre"/>
+<org.eventb.core.event name="5" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="PassengerGotOffBus">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="BusAtStation = TRUE"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="DescenteEnCours = TRUE"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd4" org.eventb.core.predicate="UsagersVeulentDescendre = ∅"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="DescenteEnCours ≔ FALSE" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="MonteeEnCours ≔ TRUE" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="8" org.eventb.core.identifier="BusAtStation"/>
+<org.eventb.core.event name=";" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="PassengerGetOnBusSecondPhase">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="PassengerGetOnBus"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="BusAtStation = TRUE"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd4" org.eventb.core.predicate="MonteeEnCours = TRUE"/>
+<org.eventb.core.guard name="." org.eventb.core.label="grd5" org.eventb.core.predicate="card(UsagersBus) &lt; BusCapacity"/>
+<org.eventb.core.action name="/" org.eventb.core.assignment="UsagersBus ≔ UsagersBus ∪ {user}" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="0" org.eventb.core.assignment="UsagersStation ≔ UsagersStation ∖ {user}" org.eventb.core.label="act3"/>
+<org.eventb.core.guard name="1" org.eventb.core.label="grd6" org.eventb.core.predicate="user ∈ UsagersStation "/>
+<org.eventb.core.parameter name="2" org.eventb.core.identifier="user"/>
+<org.eventb.core.guard name="3" org.eventb.core.label="grd7" org.eventb.core.predicate="card({user}) = 1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="=" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="PassengerGotOnBus">
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="BusAtStation = TRUE"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="MonteeEnCours = TRUE"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd4" org.eventb.core.predicate="UsagersStation = ∅"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="MonteeEnCours ≔ FALSE" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="&gt;" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="BusLeave">
+<org.eventb.core.guard name="*" org.eventb.core.label="grd4" org.eventb.core.predicate="MonteeEnCours = FALSE"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd5" org.eventb.core.predicate="DescenteEnCours = FALSE"/>
+<org.eventb.core.refinesEvent name="0" org.eventb.core.target="BusLeave"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="?" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="BusArriveToStation">
+<org.eventb.core.refinesEvent name="+" org.eventb.core.target="BusArriveToStation"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="DescenteEnCours ≔ TRUE" org.eventb.core.label="act5"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="A" org.eventb.core.target="BusContext01"/>
+<org.eventb.core.invariant name="B" org.eventb.core.label="inv5" org.eventb.core.predicate="MonteeEnCours = TRUE ⇒ DescenteEnCours = FALSE"/>
+<org.eventb.core.invariant name="C" org.eventb.core.label="inv6" org.eventb.core.predicate="DescenteEnCours = TRUE ⇒ MonteeEnCours = FALSE"/>
+<org.eventb.core.invariant name="D" org.eventb.core.label="inv7" org.eventb.core.predicate="BusAtStation = FALSE ⇒ ((MonteeEnCours = FALSE) ∧ (DescenteEnCours = FALSE))"/>
+</org.eventb.core.machineFile>
