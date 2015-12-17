@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="NumTicket ≔ 1" org.eventb.core.label="act9"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="FileArrivee ≔ ∅" org.eventb.core.label="act11"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="+" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="FirstPassengersGetOn">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="PrioPassengersGetOn"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd7" org.eventb.core.predicate="∀ u · (u∈UsagersStation ∧ u ≠ user ∧ prio(u) = prio(user)) ⇒ FileArrivee(u) &gt; FileArrivee(user)"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="FileArrivee ≔ FileArrivee ∖ {user ↦ FileArrivee(user)}" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.refinesMachine name="," org.eventb.core.target="Bus2"/>
+<org.eventb.core.event name="5" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="PrioPassengersGotOn">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="PrioPassengersGotOn"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="6" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="PrioPassengersGetOff">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="PrioPassengersGetOff"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="7" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="PrioPassengersGotOff">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="PrioPassengersGotOff"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="-" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="BusArriveToStation">
+<org.eventb.core.refinesEvent name="-" org.eventb.core.target="BusArriveToStation"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="." org.eventb.core.identifier="BusAtStation"/>
+<org.eventb.core.variable name="/" org.eventb.core.identifier="UsagersBus"/>
+<org.eventb.core.variable name="3" org.eventb.core.identifier="UsagersStation"/>
+<org.eventb.core.variable name="0" org.eventb.core.identifier="UsagersVeulentDescendre"/>
+<org.eventb.core.variable name="1" org.eventb.core.identifier="MonteeEnCours"/>
+<org.eventb.core.variable name="2" org.eventb.core.identifier="DescenteEnCours"/>
+<org.eventb.core.event name=":" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="AddPassengerToStation">
+<org.eventb.core.refinesEvent name="," org.eventb.core.target="AddPassengerToStation"/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="FileArrivee ≔ FileArrivee ∪ {user ↦ NumTicket}" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="." org.eventb.core.assignment="NumTicket ≔ NumTicket + 1" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="8" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="BusLeave">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="BusLeave"/>
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="BusAtStation = TRUE"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="BusAtStation ≔ FALSE" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="(UsagersStation = ∅ ∧ FileArrivee = ∅) ∨ (card(UsagersBus) = BusCapacity)"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd3" org.eventb.core.predicate="UsagersVeulentDescendre = ∅"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="UsagersStation ≔ ∅" org.eventb.core.label="act2"/>
+<org.eventb.core.guard name="internal1" org.eventb.core.label="grd4" org.eventb.core.predicate="MonteeEnCours = FALSE"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd5" org.eventb.core.predicate="DescenteEnCours = FALSE"/>
+<org.eventb.core.action name="internal2" org.eventb.core.assignment="FileArrivee ≔ ∅" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="9" org.eventb.core.target="BusContext2"/>
+<org.eventb.core.variable name=";" org.eventb.core.identifier="NumTicket"/>
+<org.eventb.core.variable name="=" org.eventb.core.identifier="FileArrivee"/>
+<org.eventb.core.invariant name="?" org.eventb.core.label="inv2" org.eventb.core.predicate="NumTicket ∈ ℕ1"/>
+<org.eventb.core.invariant name="@" org.eventb.core.label="inv3" org.eventb.core.predicate="FileArrivee ∈ UsagersStation → ℕ1"/>
+</org.eventb.core.machineFile>

@@ -47,4 +47,7 @@
 <org.eventb.core.invariant name="B" org.eventb.core.label="inv5" org.eventb.core.predicate="MonteeEnCours = TRUE ⇒ DescenteEnCours = FALSE"/>
 <org.eventb.core.invariant name="C" org.eventb.core.label="inv6" org.eventb.core.predicate="DescenteEnCours = TRUE ⇒ MonteeEnCours = FALSE"/>
 <org.eventb.core.invariant name="D" org.eventb.core.label="inv7" org.eventb.core.predicate="BusAtStation = FALSE ⇒ ((MonteeEnCours = FALSE) ∧ (DescenteEnCours = FALSE))"/>
+<org.eventb.core.event name="E" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="AddPassengerToStation">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="AddPassengerToStation"/>
+</org.eventb.core.event>
 </org.eventb.core.machineFile>
