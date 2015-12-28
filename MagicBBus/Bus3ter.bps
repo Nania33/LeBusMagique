@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.psFile>
+<org.eventb.core.psStatus name="inv7/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="135" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="inv4/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="135" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="135" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="135" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv3/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="135" org.eventb.core.psManual="true"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="135" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="135" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="PrioPassengersGetOn/grd2/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="135" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="PrioPassengersGetOn/grd4/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="135" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="PrioPassengersGetOn/grd6/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="135" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="PrioPassengersGetOn/grd7/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="135" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="PrioPassengersGetOn/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="135" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="PrioPassengersGetOn/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="135" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="PrioPassengersGetOn/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="135" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="PrioPassengersGetOn/grd3/GRD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="135" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="PrioPassengersGetOn/grd6/GRD" org.eventb.core.confidence="0" org.eventb.core.poStamp="135" org.eventb.core.psManual="true"/>
+<org.eventb.core.psStatus name="PrioPassengersGetOn/act2/SIM" org.eventb.core.confidence="0" org.eventb.core.poStamp="135" org.eventb.core.psManual="true"/>
+<org.eventb.core.psStatus name="PrioPassengersGotOn/grd4/GRD" org.eventb.core.confidence="0" org.eventb.core.poStamp="135" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddPassengerToStation/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="135" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddPassengerToStation/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="135" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddPassengerToStation/inv3/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="135" org.eventb.core.psManual="true"/>
+<org.eventb.core.psStatus name="AddPassengerToStation/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="135" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddPassengerToStation/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="135" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="BusLeave/grd2/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="135" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="BusLeave/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="135" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="BusLeave/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="135" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="BusLeave/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="135" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="BusLeave/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="135" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="BusLeave/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="135" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="BusLeave/grd2/GRD" org.eventb.core.confidence="0" org.eventb.core.poStamp="135" org.eventb.core.psManual="true"/>
+</org.eventb.core.psFile>
