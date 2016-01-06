@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
 <org.eventb.core.carrierSet name="'" org.eventb.core.identifier="Usagers"/>
-<org.eventb.core.constant name="(" org.eventb.core.comment="la capacite du bus en nombre de voyageurs" org.eventb.core.identifier="BusCapacity"/>
-<org.eventb.core.axiom name=")" org.eventb.core.label="axm1" org.eventb.core.predicate="BusCapacity∈ℕ1"/>
+<org.eventb.core.constant name="(" org.eventb.core.comment="la capacite du bus en nombre de voyageurs" org.eventb.core.identifier="CapaciteBus"/>
+<org.eventb.core.axiom name=")" org.eventb.core.label="axm1" org.eventb.core.predicate="CapaciteBus∈ℕ1"/>
 </org.eventb.core.contextFile>

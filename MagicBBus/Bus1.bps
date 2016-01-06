@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.psFile>
-<org.eventb.core.psStatus name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="17" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="17" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="17" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="PassengerGotOffBus/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="15" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="PassengerGotOffBus/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="15" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="PassengerGotOffBus/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="15" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="PassengerGotOnBus/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="15" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="PassengerGotOnBus/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="15" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="PassengerGotOnBus/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="15" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="BusLeave/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="BusArriveToStation/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="20" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="BusArriveToStation/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="20" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="BusArriveToStation/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="20" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="35" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="35" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="35" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="UsagerEstDescenduDuBus/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="58" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="UsagerEstDescenduDuBus/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="58" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="UsagerEstDescenduDuBus/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="58" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="UsagerEstMonteDansBus/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="57" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="UsagerEstMonteDansBus/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="57" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="UsagerEstMonteDansBus/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="57" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="BusPart/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="54" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="BusArriveAStation/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="54" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="BusArriveAStation/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="54" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="BusArriveAStation/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="54" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>

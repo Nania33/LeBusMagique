@@ -1624,20 +1624,20 @@
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
-<org.eventb.core.prIdent name="BusAtStation" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
 <org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
 <org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬(BusAtStation=TRUE∧BusAtStation=FALSE)"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="BusAtStation=FALSE⇒MonteeEnCours=FALSE∧DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="BusDansStation=FALSE⇒MonteeEnCours=FALSE∧DescenteEnCours=FALSE"/>
 <org.eventb.core.prPred name="p7" org.eventb.core.predicate="DescenteEnCours=FALSE"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="MonteeEnCours=FALSE"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬(BusAtStation=TRUE∧⊤)"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤⇒MonteeEnCours=FALSE∧DescenteEnCours=FALSE"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="BusAtStation=FALSE"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬(BusDansStation=TRUE∧⊤)"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="BusDansStation=FALSE"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="MonteeEnCours=TRUE⇒TRUE=FALSE"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="MonteeEnCours=FALSE"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬(BusDansStation=TRUE∧BusDansStation=FALSE)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤⇒MonteeEnCours=FALSE∧DescenteEnCours=FALSE"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="BusArriveToStation/inv11/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0" org.eventb.core.prSets="Usagers">
 <org.eventb.core.lang name="L"/>
@@ -2819,20 +2819,20 @@
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
-<org.eventb.core.prIdent name="BusAtStation" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
 <org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
 <org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬(BusAtStation=TRUE∧BusAtStation=FALSE)"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="BusAtStation=FALSE⇒MonteeEnCours=FALSE∧DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="BusDansStation=FALSE⇒MonteeEnCours=FALSE∧DescenteEnCours=FALSE"/>
 <org.eventb.core.prPred name="p7" org.eventb.core.predicate="DescenteEnCours=FALSE"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="MonteeEnCours=FALSE"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬(BusAtStation=TRUE∧⊤)"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬(BusDansStation=TRUE∧⊤)"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="BusDansStation=FALSE"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="TRUE=TRUE⇒MonteeEnCours=FALSE"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="MonteeEnCours=FALSE"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬(BusDansStation=TRUE∧BusDansStation=FALSE)"/>
 <org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤⇒MonteeEnCours=FALSE∧DescenteEnCours=FALSE"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="BusAtStation=FALSE"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="PassengerGetOffBusFirstPhase/grd5/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="Usagers">
 <org.eventb.core.lang name="L"/>
@@ -2934,60 +2934,98 @@
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="PassengerGotOffBus/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.prProof name="PassengerGotOffBus/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p3"/>
-<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p4"/>
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2"/>
-<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
-<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="p2"/>
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p9"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with DescenteEnCours=TRUE" org.eventb.core.prHyps="p2">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p10" org.eventb.core.prInfHyps="p16"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p10"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p6"/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
-<org.eventb.core.prIdent name="BusAtStation" org.eventb.core.type="BOOL"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬(BusAtStation=TRUE∧BusAtStation=FALSE)"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬(⊤∧BusAtStation=FALSE)"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="DescenteEnCours=TRUE⇒MonteeEnCours=FALSE">
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
 <org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
 <org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="BusDansStation=FALSE⇒MonteeEnCours=FALSE∧DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="BusDansStation∈BOOL"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="DescenteEnCours=TRUE"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="⊤⇒MonteeEnCours=FALSE"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="UsagersBus⊆Usagers">
+<org.eventb.core.prIdent name="Usagers" org.eventb.core.type="ℙ(Usagers)"/>
+<org.eventb.core.prIdent name="UsagersBus" org.eventb.core.type="ℙ(Usagers)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="MonteeEnCours=FALSE">
-<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="BusDansStation=FALSE⇒TRUE=FALSE"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="DescenteEnCours=TRUE⇒MonteeEnCours=FALSE"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="BusDansStation=FALSE⇒⊤∧DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="BusDansStation=TRUE"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="UsagersStation⊆Usagers">
+<org.eventb.core.prIdent name="Usagers" org.eventb.core.type="ℙ(Usagers)"/>
+<org.eventb.core.prIdent name="UsagersStation" org.eventb.core.type="ℙ(Usagers)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="DescenteEnCours=TRUE">
-<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤⇒MonteeEnCours=FALSE">
-<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
-</org.eventb.core.prPred>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="BusAtStation=TRUE"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="BusAtStation=FALSE⇒TRUE=FALSE∧FALSE=FALSE"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="BusDansStation=FALSE⇒TRUE=FALSE∧FALSE=FALSE"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="MonteeEnCours∈BOOL"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="BusDansStation=FALSE⇒DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="DescenteEnCours∈BOOL"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬(⊥∧BusDansStation=FALSE)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="MonteeEnCours=FALSE"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬(BusDansStation=TRUE∧BusDansStation=FALSE)"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="PassengerGotOnBus/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p4"/>
-<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p6"/>
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p3"/>
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="p4">
 <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
-<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p7">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p11">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p10"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p11" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
-<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p13" org.eventb.core.prHyps=""/>
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p7"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p10" org.eventb.core.prHyps=""/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -2996,26 +3034,23 @@
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
-<org.eventb.core.prIdent name="BusAtStation" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
 <org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
 <org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="⊤"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="MonteeEnCours=TRUE⇒DescenteEnCours=FALSE"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬(⊤∧BusAtStation=FALSE)"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="BusAtStation=FALSE⇒FALSE=FALSE∧DescenteEnCours=FALSE"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="BusAtStation=TRUE"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="BusAtStation=FALSE⇒MonteeEnCours=FALSE∧⊤"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="BusAtStation=FALSE⇒DescenteEnCours=FALSE"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="BusAtStation=FALSE⇒MonteeEnCours=FALSE"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬(BusAtStation=TRUE∧BusAtStation=FALSE)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="BusDansStation=FALSE⇒DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤⇒DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="BusDansStation=FALSE⇒MonteeEnCours=FALSE∧DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="BusDansStation=FALSE⇒MonteeEnCours=FALSE∧⊤"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="BusDansStation=FALSE⇒⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="BusDansStation=FALSE⇒FALSE=FALSE∧DescenteEnCours=FALSE"/>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="MonteeEnCours=TRUE"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="BusAtStation=FALSE⇒MonteeEnCours=FALSE∧DescenteEnCours=FALSE"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="BusAtStation=FALSE⇒⊤"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="DescenteEnCours=FALSE"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊤⇒DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="BusDansStation=FALSE⇒MonteeEnCours=FALSE"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="MonteeEnCours=TRUE⇒DescenteEnCours=FALSE"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="BusLeave/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
 <org.eventb.core.lang name="L"/>
@@ -3122,5 +3157,912 @@
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="BusArriveAStation/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p6"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="BusDansStation=FALSE⇒MonteeEnCours=FALSE∧DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬(BusDansStation=TRUE∧⊤)"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="BusDansStation=FALSE"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="MonteeEnCours=TRUE⇒TRUE=FALSE"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="MonteeEnCours=FALSE"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬(BusDansStation=TRUE∧BusDansStation=FALSE)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤⇒MonteeEnCours=FALSE∧DescenteEnCours=FALSE"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="BusArriveAStation/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p6"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="BusDansStation=FALSE⇒MonteeEnCours=FALSE∧DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬(BusDansStation=TRUE∧⊤)"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="BusDansStation=FALSE"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="TRUE=TRUE⇒MonteeEnCours=FALSE"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="MonteeEnCours=FALSE"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬(BusDansStation=TRUE∧BusDansStation=FALSE)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤⇒MonteeEnCours=FALSE∧DescenteEnCours=FALSE"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="BusArriveAStation/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="BusDansStation=FALSE⇒MonteeEnCours=FALSE∧DescenteEnCours=FALSE">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="DescenteEnCours=FALSE">
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="TRUE=FALSE⇒MonteeEnCours=FALSE∧TRUE=FALSE"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬(BusDansStation=TRUE∧⊤)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="BusDansStation=FALSE">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="MonteeEnCours=FALSE"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬(BusDansStation=TRUE∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤⇒MonteeEnCours=FALSE∧DescenteEnCours=FALSE">
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="BusPart/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p7"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p9"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="p2,p1" org.eventb.core.prInfHyps="p11"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="p14" org.eventb.core.prInfHyps="p13"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p16" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="finite(UsagersBus)">
+<org.eventb.core.prIdent name="Usagers" org.eventb.core.type="ℙ(Usagers)"/>
+<org.eventb.core.prIdent name="UsagersBus" org.eventb.core.type="ℙ(Usagers)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬(⊤∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="BusDansStation=FALSE⇒MonteeEnCours=FALSE∧DescenteEnCours=FALSE">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="MonteeEnCours=TRUE⇒⊤"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="DescenteEnCours=TRUE⇒MonteeEnCours=FALSE"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="UsagersStation=(∅ ⦂ ℙ(Usagers))∨finite(UsagersBus)">
+<org.eventb.core.prIdent name="Usagers" org.eventb.core.type="ℙ(Usagers)"/>
+<org.eventb.core.prIdent name="UsagersBus" org.eventb.core.type="ℙ(Usagers)"/>
+<org.eventb.core.prIdent name="UsagersStation" org.eventb.core.type="ℙ(Usagers)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="BusDansStation=TRUE">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="FALSE=FALSE⇒⊤∧⊤"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="MonteeEnCours=TRUE⇒DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="FALSE=FALSE⇒MonteeEnCours=FALSE∧DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="UsagersStation=(∅ ⦂ ℙ(Usagers))∨⊤">
+<org.eventb.core.prIdent name="Usagers" org.eventb.core.type="ℙ(Usagers)"/>
+<org.eventb.core.prIdent name="UsagersStation" org.eventb.core.type="ℙ(Usagers)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="DescenteEnCours=TRUE⇒⊤"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="MonteeEnCours=FALSE"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬(BusDansStation=TRUE∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="BusDansStation=FALSE⇒⊤∧⊤">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="UsagerDescendDuBus/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬(⊤∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤⇒MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="DescenteEnCours=TRUE">
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="TRUE=TRUE⇒FALSE=FALSE"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="DescenteEnCours=TRUE⇒MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="BusDansStation=TRUE">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬(BusDansStation=TRUE∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="UsagerDescendDuBus/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬(⊤∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤⇒MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="DescenteEnCours=TRUE">
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="DescenteEnCours=TRUE⇒MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="BusDansStation=TRUE">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬(BusDansStation=TRUE∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="FALSE=TRUE⇒TRUE=FALSE"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="UsagerDescendDuBus/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="BusDansStation=FALSE⇒TRUE=FALSE∧FALSE=FALSE"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬(⊤∧BusDansStation=FALSE)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤⇒MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="DescenteEnCours=TRUE">
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="DescenteEnCours=TRUE⇒MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="BusDansStation=TRUE"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬(BusDansStation=TRUE∧BusDansStation=FALSE)"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="UsagerDescendDuBus2/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬(⊤∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤⇒MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="DescenteEnCours=TRUE">
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="TRUE=TRUE⇒FALSE=FALSE"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="DescenteEnCours=TRUE⇒MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="BusDansStation=TRUE">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬(BusDansStation=TRUE∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="UsagerDescendDuBus2/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬(⊤∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤⇒MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="DescenteEnCours=TRUE">
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="DescenteEnCours=TRUE⇒MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="BusDansStation=TRUE">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬(BusDansStation=TRUE∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="FALSE=TRUE⇒TRUE=FALSE"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="UsagerDescendDuBus2/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="BusDansStation=FALSE⇒TRUE=FALSE∧FALSE=FALSE"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬(⊤∧BusDansStation=FALSE)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤⇒MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="DescenteEnCours=TRUE">
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="DescenteEnCours=TRUE⇒MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="BusDansStation=TRUE"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬(BusDansStation=TRUE∧BusDansStation=FALSE)"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="UsagerMonteDansBus/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="FALSE=TRUE⇒DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬(⊤∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤⇒DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="BusDansStation=TRUE">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬(BusDansStation=TRUE∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="MonteeEnCours=TRUE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="MonteeEnCours=TRUE⇒DescenteEnCours=FALSE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="UsagerMonteDansBus/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬(⊤∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤⇒DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="DescenteEnCours=TRUE⇒FALSE=FALSE"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="BusDansStation=TRUE">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬(BusDansStation=TRUE∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="MonteeEnCours=TRUE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="MonteeEnCours=TRUE⇒DescenteEnCours=FALSE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="UsagerMonteDansBus/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p6"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p7">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p11">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p10"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p11" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p13" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬(⊤∧BusDansStation=FALSE)"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="BusDansStation=FALSE⇒MonteeEnCours=FALSE∧DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="BusDansStation=FALSE⇒FALSE=FALSE∧DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="BusDansStation=TRUE"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="MonteeEnCours=TRUE"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="MonteeEnCours=TRUE⇒DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="BusDansStation=FALSE⇒DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊤⇒DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="BusDansStation=FALSE⇒MonteeEnCours=FALSE∧⊤"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="BusDansStation=FALSE⇒⊤"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬(BusDansStation=TRUE∧BusDansStation=FALSE)"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="BusDansStation=FALSE⇒MonteeEnCours=FALSE"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="UsagerMonteDansBus2/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="FALSE=TRUE⇒DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬(⊤∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤⇒DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="BusDansStation=TRUE">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬(BusDansStation=TRUE∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="MonteeEnCours=TRUE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="MonteeEnCours=TRUE⇒DescenteEnCours=FALSE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="UsagerMonteDansBus2/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬(⊤∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤⇒DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="DescenteEnCours=TRUE⇒FALSE=FALSE"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="BusDansStation=TRUE">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬(BusDansStation=TRUE∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="MonteeEnCours=TRUE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="MonteeEnCours=TRUE⇒DescenteEnCours=FALSE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="UsagerMonteDansBus2/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p6"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p7">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p11">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p10"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p11" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p13" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬(⊤∧BusDansStation=FALSE)"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="BusDansStation=FALSE⇒MonteeEnCours=FALSE∧DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="BusDansStation=FALSE⇒FALSE=FALSE∧DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="BusDansStation=TRUE"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="MonteeEnCours=TRUE"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="MonteeEnCours=TRUE⇒DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="BusDansStation=FALSE⇒DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊤⇒DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="BusDansStation=FALSE⇒MonteeEnCours=FALSE∧⊤"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="BusDansStation=FALSE⇒⊤"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬(BusDansStation=TRUE∧BusDansStation=FALSE)"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="BusDansStation=FALSE⇒MonteeEnCours=FALSE"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="UsagerEstMonteDansBus/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="FALSE=TRUE⇒DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬(⊤∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤⇒DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="BusDansStation=TRUE">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬(BusDansStation=TRUE∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="MonteeEnCours=TRUE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="MonteeEnCours=TRUE⇒DescenteEnCours=FALSE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="UsagerEstMonteDansBus/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬(⊤∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤⇒DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="DescenteEnCours=TRUE⇒FALSE=FALSE"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="BusDansStation=TRUE">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬(BusDansStation=TRUE∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="MonteeEnCours=TRUE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="MonteeEnCours=TRUE⇒DescenteEnCours=FALSE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="UsagerEstMonteDansBus/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p6"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p7">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p11">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p10"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p11" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p13" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬(⊤∧BusDansStation=FALSE)"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="BusDansStation=FALSE⇒MonteeEnCours=FALSE∧DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="BusDansStation=FALSE⇒FALSE=FALSE∧DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="BusDansStation=TRUE"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="MonteeEnCours=TRUE"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="MonteeEnCours=TRUE⇒DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="BusDansStation=FALSE⇒DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊤⇒DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="DescenteEnCours=FALSE"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="BusDansStation=FALSE⇒MonteeEnCours=FALSE∧⊤"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="BusDansStation=FALSE⇒⊤"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬(BusDansStation=TRUE∧BusDansStation=FALSE)"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="BusDansStation=FALSE⇒MonteeEnCours=FALSE"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="UsagerEstDescenduDuBus/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬(⊤∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤⇒MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="DescenteEnCours=TRUE">
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="TRUE=TRUE⇒FALSE=FALSE"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="DescenteEnCours=TRUE⇒MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="BusDansStation=TRUE">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬(BusDansStation=TRUE∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="UsagerEstDescenduDuBus/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬(⊤∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤⇒MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="DescenteEnCours=TRUE">
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="DescenteEnCours=TRUE⇒MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="BusDansStation=TRUE">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬(BusDansStation=TRUE∧BusDansStation=FALSE)">
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="FALSE=TRUE⇒TRUE=FALSE"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="UsagerEstDescenduDuBus/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="BusDansStation" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="BusDansStation=FALSE⇒TRUE=FALSE∧FALSE=FALSE"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬(⊤∧BusDansStation=FALSE)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤⇒MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="DescenteEnCours=TRUE">
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="DescenteEnCours=TRUE⇒MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="DescenteEnCours" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="BusDansStation=TRUE"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="MonteeEnCours=FALSE">
+<org.eventb.core.prIdent name="MonteeEnCours" org.eventb.core.type="BOOL"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬(BusDansStation=TRUE∧BusDansStation=FALSE)"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 </org.eventb.core.prProof>
 </org.eventb.core.prFile>

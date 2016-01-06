@@ -4,31 +4,31 @@
 <org.eventb.core.variable name="(" org.eventb.core.identifier="UsagersBus"/>
 <org.eventb.core.variable name=")" org.eventb.core.identifier="UsagersVeulentDescendre"/>
 <org.eventb.core.variable name="*" org.eventb.core.identifier="UsagersStation"/>
-<org.eventb.core.variable name="+" org.eventb.core.identifier="BusAtStation"/>
+<org.eventb.core.variable name="+" org.eventb.core.identifier="BusDansStation"/>
 <org.eventb.core.refinesMachine name="," org.eventb.core.target="Bus1"/>
 <org.eventb.core.seesContext name="-" org.eventb.core.target="BusContext2"/>
-<org.eventb.core.event name="." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="PrioPassengersGetOn">
-<org.eventb.core.guard name=")" org.eventb.core.label="grd6" org.eventb.core.predicate="∀ u · (u∈UsagersStation ∧ u≠user) ⇒ prio(u) ≤ prio(user)"/>
-<org.eventb.core.refinesEvent name="-" org.eventb.core.target="PassengerGetOnBusSecondPhase"/>
+<org.eventb.core.event name="." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="UsagersPrioritairesMontent">
+<org.eventb.core.guard name=")" org.eventb.core.label="grd6" org.eventb.core.predicate="∀ u · (u∈UsagersStation ∧ u≠utilisateur) ⇒ priorite(u) ≤ priorite(utilisateur)"/>
+<org.eventb.core.refinesEvent name="-" org.eventb.core.target="UsagerMonteDansBusSecondePhase"/>
 </org.eventb.core.event>
-<org.eventb.core.event name="5" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="PrioPassengersGotOn">
-<org.eventb.core.refinesEvent name="'" org.eventb.core.target="PassengerGotOnBus"/>
+<org.eventb.core.event name="5" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="UsagersPrioritaireSontMontes">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="UsagerEstMonteDansBus"/>
 </org.eventb.core.event>
-<org.eventb.core.event name="/" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="PrioPassengersGetOff">
-<org.eventb.core.refinesEvent name="'" org.eventb.core.target="PassengerGetOffBusFirstPhase"/>
+<org.eventb.core.event name="/" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="UsagersPrioritairesDescendent">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="UsagerDescendDuBusPremierePhase"/>
 </org.eventb.core.event>
-<org.eventb.core.event name="6" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="PrioPassengersGotOff">
-<org.eventb.core.refinesEvent name="'" org.eventb.core.target="PassengerGotOffBus"/>
+<org.eventb.core.event name="6" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="UsagersPrioritaireDescendus">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="UsagerEstDescenduDuBus"/>
 </org.eventb.core.event>
-<org.eventb.core.event name="0" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="BusArriveToStation">
-<org.eventb.core.refinesEvent name="'" org.eventb.core.target="BusArriveToStation"/>
+<org.eventb.core.event name="0" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="BusArriveAStation">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="BusArriveAStation"/>
 </org.eventb.core.event>
-<org.eventb.core.event name="1" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="BusLeave">
-<org.eventb.core.refinesEvent name="'" org.eventb.core.target="BusLeave"/>
+<org.eventb.core.event name="1" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="BusPart">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="BusPart"/>
 </org.eventb.core.event>
 <org.eventb.core.variable name="3" org.eventb.core.identifier="MonteeEnCours"/>
 <org.eventb.core.variable name="4" org.eventb.core.identifier="DescenteEnCours"/>
-<org.eventb.core.event name="7" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="AddPassengerToStation">
-<org.eventb.core.refinesEvent name="'" org.eventb.core.target="AddPassengerToStation"/>
+<org.eventb.core.event name="7" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="AjouterUsagerAStation">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="AjouterUsagerAStation"/>
 </org.eventb.core.event>
 </org.eventb.core.machineFile>
