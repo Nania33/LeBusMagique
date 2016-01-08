@@ -50,5 +50,5 @@
 <org.eventb.core.event name="E" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="AjouterUsagerAStation">
 <org.eventb.core.refinesEvent name="'" org.eventb.core.target="AjouterUsagerAStation"/>
 </org.eventb.core.event>
-<org.eventb.core.invariant name="F" org.eventb.core.label="dlf" org.eventb.core.predicate="MonteeEnCours ∈ BOOL ∨ DescenteEnCours ∈ BOOL ∨ (MonteeEnCours = TRUE ⇒ DescenteEnCours = FALSE) ∨ (DescenteEnCours = TRUE ⇒ MonteeEnCours = FALSE) ∨ (BusDansStation = FALSE ⇒ (MonteeEnCours = FALSE) ∧ (DescenteEnCours = FALSE))" org.eventb.core.theorem="true"/>
+<org.eventb.core.invariant name="F" org.eventb.core.label="dlf" org.eventb.core.predicate="(BusDansStation = FALSE ⇒ MonteeEnCours = FALSE ∧ DescenteEnCours = FALSE) ∨ (BusDansStation = TRUE ⇒ ((DescenteEnCours = TRUE ∧ MonteeEnCours = FALSE) ∨ (DescenteEnCours = FALSE ∧ MonteeEnCours = TRUE ∧ UsagersVeulentDescendre = ∅) ∨ (DescenteEnCours = FALSE ∧ MonteeEnCours = FALSE ∧ UsagersVeulentDescendre = ∅ ∧ (UsagersStation = ∅ ∨ card(UsagersBus) = CapaciteBus))))" org.eventb.core.theorem="true"/>
 </org.eventb.core.machineFile>

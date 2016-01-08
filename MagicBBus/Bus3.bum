@@ -6,7 +6,7 @@
 </org.eventb.core.event>
 <org.eventb.core.event name="+" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="UsagersPrioritairesMontent">
 <org.eventb.core.refinesEvent name="'" org.eventb.core.target="UsagersPrioritairesMontent"/>
-<org.eventb.core.guard name="(" org.eventb.core.label="grd710" org.eventb.core.predicate="∀ u · (u∈UsagersStation ∧ u ≠ utilisateur ∧ priorite(u) = priorite(utilisateur)) ⇒ FileArrivee(u) &gt; FileArrivee(utilisateur)"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd710" org.eventb.core.predicate="∀ u · (u∈UsagersStation ∧ u ≠ utilisateur ∧ Priorite(u) = Priorite(utilisateur)) ⇒ FileArrivee(u) &gt; FileArrivee(utilisateur)"/>
 <org.eventb.core.action name=")" org.eventb.core.assignment="FileArrivee ≔ FileArrivee ∖ {utilisateur ↦ FileArrivee(utilisateur)}" org.eventb.core.label="act3"/>
 </org.eventb.core.event>
 <org.eventb.core.refinesMachine name="," org.eventb.core.target="Bus2"/>
